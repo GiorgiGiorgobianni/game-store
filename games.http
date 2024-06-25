@@ -1,0 +1,30 @@
+GET http://localhost:5007/games
+###
+
+GET http://localhost:5007/games/1
+
+###
+POST http://localhost:5007/games
+Content-Type: application/json
+
+{
+    //"name": "Counter-Strike 2",
+    "genre": "fps",
+    "price": 9.99,
+    "releaseDate": "2023-10-12"
+}
+
+###
+
+PUT http://localhost:5007/games/1
+Content-Type: application/json
+
+{
+    "name": "World of Warcraft: Wrath of the  Lich King",
+    "genre": "MMORPG",
+    "price": 29.99,
+    "releaseDate":"2008-11-18"
+}
+
+###
+DELETE http://localhost:5007/games/1
